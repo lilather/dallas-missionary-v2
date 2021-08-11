@@ -1,0 +1,8 @@
+{
+"links": [
+"./css/bundle.css"
+],
+"scripts":[
+"./bundle.js"
+]
+}

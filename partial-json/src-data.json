@@ -1,0 +1,13 @@
+{
+  "links": [
+   "./css/color.css",
+   "./css/font.css",
+   "./css/html-boiler.css",
+   "./css/reposnsive.css", 
+   "./css/main.css"
+],
+"scripts":[
+"./js/main.js"
+]
+
+}
