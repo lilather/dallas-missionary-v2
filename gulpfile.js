@@ -5,7 +5,7 @@ fs = require('fs');
 const plugins = require('gulp-load-plugins')()
 
 function pug() {
-  return src( ["./src/pug/* !./src/template.pug"]).pipe(plugins.watch('./src/pug/*.pug')).pipe(data(function(file) {
+  return src( ["./src/pug/*"]).pipe(data(function(file) {
     return JSON.parse(fs.readFileSync('./partial-json/src-data.json'))})).pipe(plugins.pug()).pipe(dest('./src/'))
   }
 

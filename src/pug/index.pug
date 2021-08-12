@@ -1,27 +1,18 @@
 extends template.pug
 block title&description
-  title     
+ title     
     | Assure Studios church SEO, and web design for churches call us at
     | 972-880-4218 for a free consultation.&quot;"
 block bodyTag
- - var id ="home"
-block slider
- section.slider
-  .sliderContainer#subTitleContainer
-    h1.animatedText
-      span.sliderSubTitle Welcome to Assure Studios
-      span.sliderHeader Church Digital Marketing done Right!
-      span.sliderText Our mission is to help churches grow and prosper.
-block content
- .midSection 
-  .sermon 
-  .clubs
- .prayer
- .ministries
-  .ministry-one 
-  .ministry-two 
- .testimony
-block append scripts 
+  - var id ="home"
+block banner
+  .banner
+    h1.animatedText Families Who Keep Loving Until They Get It Right Will Never Fail.
+
+    
+block content 
+ 
+ block append scripts 
   script(src="js/vendor/anime.js")
   script(src="js/slider.js")
 
