@@ -16,7 +16,7 @@ function pug_dist() {
  }
   
 function sass() {
-  return src( ["./src/scss/*"]).pipe(plugins.watch('./src/scss/*.scss')).pipe(plugins.sass()).pipe(dest('./src/css')).pipe(plugins.gzip()).pipe(gulp.dest('./dist/css/'));
+  return src( ["./src/scss/*"]).pipe(plugins.watch('./src/scss/*.scss')).pipe(plugins.sass()).pipe(dest('./src/css/')).pipe(plugins.gzip()).pipe(gulp.dest('./dist/css/'));
 }
 
 function css() {
