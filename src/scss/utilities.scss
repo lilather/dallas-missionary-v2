@@ -1,1 +1,49 @@
+@import "./color.scss";
 
+img{
+  max-width: 100%;
+}
+html{
+  margin:0;
+  padding:0;
+
+}
+body{
+  margin:0;
+  padding:0;
+
+}
+
+video{
+  width:100%;
+}
+
+.btn{
+  padding:1rem 1.9rem !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius:45px !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-transform: capitalize;
+  // fix boots trap margin-top problem
+  margin-top:20px !important;
+  margin-bottom:20px;
+}
+
+.white-bg-wrapper{
+  background-color: $whiteFontColor;
+  color: $blackFontColor;
+}
+
+.black-bg-wrapper{
+  background-color: $blackFontColor;
+ color:$whiteFontColor;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #25bfe7;
+  border-color: none;
+}

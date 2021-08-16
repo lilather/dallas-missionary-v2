@@ -1,0 +1,137 @@
+img {
+  max-width: 100%; }
+
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+video {
+  width: 100%; }
+
+.btn {
+  padding: 1rem 1.9rem !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 45px !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+  margin-top: 20px !important;
+  margin-bottom: 20px; }
+
+.white-bg-wrapper {
+  background-color: #fcfcff;
+  color: #1a1818; }
+
+.black-bg-wrapper {
+  background-color: #1a1818;
+  color: #fcfcff; }
+
+.btn-primary {
+  color: #fff;
+  background-color: #25bfe7;
+  border-color: #0d6efd; }
+
+body {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  background-color: #1a1818; }
+
+.section-padding {
+  padding: 5%; }
+
+.section-margin {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+h2 {
+  font-size: 3rem; }
+
+.banner {
+  background-color: #CF8087;
+  padding: 8% 3%;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+
+.banner h1 {
+  margin: 100px 0px;
+  color: #fcfcff;
+  font-size: 7rem;
+  text-align: center; }
+
+.banner button {
+  background-color: #1a1818;
+  font-weight: 600;
+  margin: 75px 0px;
+  color: #fcfcff;
+  max-width: 370px; }
+
+.sermon-section {
+  background-color: #1a1818;
+  color: #fcfcff;
+  padding: 3% 5%;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -120px; }
+
+.sermon-section h2 {
+  font-size: 3rem;
+  margin-top: 0px !important; }
+
+.sub-title {
+  color: #CF8087; }
+
+.sub-links-container {
+  margin-top: 30px; }
+
+.sublinks {
+  text-transform: capitalize;
+  margin-right: 15px;
+  color: #26BFE7; }
+
+.groups-section {
+  color: #fcfcff; }
+
+.groups-section h3 {
+  text-transform: capitalize;
+  margin: 15px 0px; }
+
+.groups-section .info {
+  font-size: 1.1rem;
+  color: #CF8087; }
+
+.prayer-groups {
+  color: #1a1818;
+  padding: 3%;
+  background-image: url("../img/prayer-groups.jpeg");
+  background-size: cover;
+  height: 70vh;
+  background-repeat: no-repeat; }
+
+.prayer-groups img {
+  width: max-content; }
+
+.prayer-groups button {
+  background-color: #fcfcff;
+  color: #1a1818;
+  margin-top: 30px;
+  min-width: 350px; }
+
+.prayer-groups button span {
+  display: block; }
+
+.testimony .inner {
+  background-color: #1a1818;
+  color: #fcfcff; }
+
+.testimony h3 {
+  margin-top: -10px !important;
+  font-size: 1.3rem;
+  color: #26BFE7;
+  text-transform: uppercase; }

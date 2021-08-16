@@ -1,10 +1,119 @@
 @import "./color.scss";
-@import "./responsive.scss";
 @import "./utilities.scss";
 
+body {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  background-color: $blackFontColor;
 
-
-.banner{
-    background-color: $primary-highlight;
-    height: 100vh;
 }
+.section-padding{
+  padding:5%;
+
+}
+.section-margin{
+  margin-top:100px;
+  margin-bottom:100px;
+    }
+h2{
+  font-size: 3rem;
+}
+.banner {
+  background-color: $primary-highlight;
+  padding:8% 3%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+
+
+
+.banner h1 {
+    margin:100px 0px;
+  color: $whiteFontColor;
+  font-size: 7rem;
+  text-align: center;
+}
+
+.banner button{
+  background-color: $blackFontColor;
+  font-weight: 600;
+  margin:75px 0px ;
+  color:$whiteFontColor;
+  max-width: 370px;
+}
+
+.sermon-section{
+  background-color: $blackFontColor;
+  color:$whiteFontColor;
+  padding:3% 5%;
+  border-radius: 30px 30px 0px 0px;
+  margin-top:-120px
+}
+.sermon-section h2{
+  font-size: 3rem;
+  margin-top:0px !important
+}
+.sub-title{
+  color:$primary-highlight;
+}
+
+.sub-links-container{
+  margin-top:30px;
+
+}
+
+.sublinks{
+  text-transform: capitalize;
+  margin-right:15px;
+  color: $secondary-highlight;
+
+}
+.groups-section{
+  color:$whiteFontColor;
+}
+.groups-section h3{
+  text-transform:capitalize;
+  margin:15px 0px;
+}
+.groups-section .info{
+font-size: 1.1rem;
+color:$primary-highlight
+}
+
+.prayer-groups{
+  color:$blackFontColor;
+  padding:3%;
+  background-image: url("../img/prayer-groups.jpeg");
+  background-size:cover;
+  height:70vh;
+  background-repeat: no-repeat;
+}
+.prayer-groups img{
+  width:max-content;
+}
+.prayer-groups button{
+  background-color: $whiteFontColor;
+  color:$blackFontColor;
+  margin-top:30px;
+  min-width: 350px;
+}
+.prayer-groups button span{
+display: block;
+}
+
+.testimony .inner{
+  background-color: $blackFontColor;
+  color:$whiteFontColor
+}
+.testimony h3{
+  margin-top:-10px !important;
+  font-size: 1.3rem;
+  color:$secondary-highlight;
+  text-transform:uppercase
+}
+
+

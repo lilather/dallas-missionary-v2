@@ -2,19 +2,19 @@
     / 1. Fixed Header
     /--------------------------------------------------------*/
     let header=document.getElementById('header');
-    
-    window.addEventListener('scroll', function() {
-      if(window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0) > 40){
-      header.classList.add('fixedHeader');
-
-      }
-      else {
-      header.classList.remove('fixedHeader');
-
-      }
-      scrollTopMenu();
-
-});
-
-
-
+    let sermonSection=document.querySelector('.sermon')
+    let sermonContent=document.querySelector('.sermon-content')
+const resize=() =>{
+  console.log("d")
+const mq = window.matchMedia( "(max-width: 1200px)" );
+if(mq.matches===true){
+sermonSection.classList.add("section-margin");
+sermonContent.classList.add("section-padding")
+}
+else{
+  sermonSection.classList.remove("section-margin");
+  sermonContent.classList.remove("section-padding")
+}
+}
+resize();
+window.addEventListener("resize" , resize)

@@ -1,0 +1,64 @@
+@import "./color.scss";
+ 
+ 
+@media screen and (max-width:2500px) {
+
+
+}
+
+ @media screen and (max-width:1200px) {
+  .sermon-section{
+    // take the rounded div effect of of sermon section 
+  border-radius: 0px;
+  // take padding of sermon section and let the wrapper take over
+  padding:0;
+  margin-top: 0px;
+  }
+  .banner h1{
+    font-size:5rem;
+  }
+  .prayer-groups button span{
+    display: inline;
+    }
+  
+ }
+ @media screen and (max-width:768px) {
+  .prayer-groups{
+   background-image: url("../img/prayer-groups-mobile.jpg");  
+   height:70vh;
+  }
+  .prayer-groups p{
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    padding:20px;
+    border-radius:10px;
+  }
+
+  .prayer-groups button{
+    opacity: 0.9;
+  }
+
+ 
+   .banner h1{
+      font-size:3rem;
+    }
+    .section-padding{
+      padding:5%;
+    }
+ }
+
+ @media screen and (max-width:568px) {
+  .banner h1{
+    font-size:2.2rem;
+  }
+  h2{
+    font-size: 1.9rem;
+  }
+  h3{
+    font-size: 1.2rem;
+
+  }
+  .section-padding{
+    padding:4%;
+  }
+ }
+

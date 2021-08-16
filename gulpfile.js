@@ -5,7 +5,7 @@ fs = require('fs');
 const plugins = require('gulp-load-plugins')()
 
 function pug() {
-  return src( ["./src/pug/*"]).pipe(data(function(file) {
+  return src( ["./src/pug/*"]).pipe(plugins.watch('./src/pug/*.pug')).pipe(data(function(file) {
     return JSON.parse(fs.readFileSync('./partial-json/src-data.json'))})).pipe(plugins.pug()).pipe(dest('./src/'))
   }
 
@@ -35,13 +35,15 @@ return src('./src/*html').pipe(plugins.htmlclean()).pipe(gulp.dest('./dist/'))
 }
 
 function img(){
-  return src('./src/img/*').pipe(plugins.imagemin()).pipe(gulp.dest('./dist/img/')).pipe(plugins.webp()).pipe(gulp.dest('./dist/img/'));
+  return src('./src/img/*').pipe(plugins.imagemin()).pipe(gulp.dest('./src/img/')).pipe(plugins.webp()).pipe(gulp.dest('./src/img/'));
   }
   
 function deploy(){
   return src("./dist/**/*").pipe(plugins.ghPages())
 
 }
+exports.img=img;
+
 exports.js=js;
 exports.deploy=deploy;
 exports.js=js;

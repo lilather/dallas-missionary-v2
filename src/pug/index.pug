@@ -7,10 +7,82 @@ block bodyTag
   - var id ="home"
 block banner
   .banner
-    h1.animatedText Families Who Keep Loving Until They Get It Right Will Never Fail.
-
+    h1 Families Who Keep Loving Until They Get It Right Will Never Fail.
+    img(src="./img/family.silou.png", alt="", srcset="")
+    button.btn.btn-dark.btn-lg let's connect
     
 block content 
+ .sermon
+  .container-fluid.sermon-section
+   .row.sermon-container.justify-content-between
+    .sermon.col-xl-6
+      video(src='videos/dont_be_afraid.mp4' controls='')
+    .sermon-content.col-xl-6
+     h2.latest-sermon Latest Sermon
+     h3.title Dont Be Afraid.
+     .sub-title November 8 2020
+     .video-info
+     | Lorem ipsum dolor sit amet, consetetur sadipscing
+     | elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+     | aliquyam erat, sed diam voluptua. At vero.
+     .sub-links-container
+      a.sublinks(href='http://' target='_blank' rel='noopener noreferrer') espanol
+      a.sublinks(href='http://' target='_blank' rel='noopener noreferrer') Download
+ .groups-section.section-padding 
+  .container-fluid 
+   .row 
+    .col-xl-4.kids-club
+     img(src="./img/kids-group.jpeg")
+     h3 DMBC kids club
+     .info 2nd-5th grade
+     p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    .col-xl-4 
+     img(src="./img/teens-group.jpeg")
+     h3 DMBC Teenz
+     .info 2nd-5th grade
+     p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    .col-xl-4 
+     img(src="./img/adult-group.jpeg")
+     h3 DMBC young adults
+     .info 2nd-5th grade
+     p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+ .white-bg-wrapper
+  .prayer-groups
+    .prayer-info 
+    h2 Where two are more or gathered!
+    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+    button.btn.btn-light.btn-lg Join A Prayer Group
+  .charitble-events.section-margin.section-padding
+   .container-fluid
+      h2 Our giving ministires 
+      p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      .row 
+       .col-xl-6
+        img(src="./img/charity-africa.jpeg")
+        h3 Learn about our mission trips to Africa 2021
+        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        button.btn.btn-primary.btn-lg.mt-4.mb-5 Global Missions
+
+       .col-xl-6 
+        img(src="./img/charity-troops.jpeg")
+        h3 Learn How We Donate to Our Troops
+        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        button.btn.btn-primary.btn-lg.mt-4.mb-5 Support our troops
+
+   .testimony.container-fluid.section-margin 
+      .row.justify-content-center 
+       .col-xl-10.col-lg-12
+        .row.section-padding.inner.flex-wrap-reverse
+         .col-xl-7
+          h2 this month's Testimony 
+          h3 the johnson's story
+          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+
+          p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+          button.btn.btn-primary.btn-lg.mt-4.mb-5 learn about the johnson's
+         .col-xl-5 
+          img(src="./img/johnsons-testimony.jpeg")
+      
  
  block append scripts 
   script(src="js/vendor/anime.js")
