@@ -34,21 +34,42 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
   color: #fff;
   background-color: #25bfe7;
-  border-color: #0d6efd; }
+  border-color: none; }
 
 body {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 16px;
   background-color: #1a1818; }
+
+nav {
+  background-color: #fcfcff;
+  padding-right: 3%;
+  padding-left: 3%; }
+
+nav li {
+  text-transform: capitalize; }
+
+nav a:link {
+  color: #000; }
+
+nav a:hover {
+  color: darkblue; }
+
+.navbar-brand {
+  font-size: 1.1rem;
+  text-transform: uppercase; }
+
+.navbar-brand svg {
+  margin-right: 7px; }
 
 .section-padding {
   padding: 5%; }
 
 .section-margin {
-  margin-top: 100px;
-  margin-bottom: 100px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
 h2 {
   font-size: 3rem; }
@@ -111,7 +132,7 @@ h2 {
   padding: 3%;
   background-image: url("../img/prayer-groups.jpeg");
   background-size: cover;
-  height: 70vh;
+  height: 100vh;
   background-repeat: no-repeat; }
 
 .prayer-groups img {
@@ -126,6 +147,9 @@ h2 {
 .prayer-groups button span {
   display: block; }
 
+.charitble-events {
+  margin-bottom: 0px !important; }
+
 .testimony .inner {
   background-color: #1a1818;
   color: #fcfcff; }
@@ -135,3 +159,9 @@ h2 {
   font-size: 1.3rem;
   color: #26BFE7;
   text-transform: uppercase; }
+
+footer {
+  background-color: #1a1818;
+  color: #fcfcff;
+  text-align: center;
+  padding-top: 2%; }

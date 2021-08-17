@@ -5,17 +5,41 @@ body {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 16px;
   background-color: $blackFontColor;
 
+}
+nav{
+background-color: $whiteFontColor;
+padding-right:3%;
+padding-left: 3%;
+}
+
+nav li{
+text-transform: capitalize;
+}
+
+nav a:link{
+  color: #000;
+}
+nav a:hover{
+  color:darkblue
+}
+
+.navbar-brand{
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+.navbar-brand svg{
+margin-right:7px;
 }
 .section-padding{
   padding:5%;
 
 }
 .section-margin{
-  margin-top:100px;
-  margin-bottom:100px;
+  margin-top:30px;
+  margin-bottom:30px;
     }
 h2{
   font-size: 3rem;
@@ -89,7 +113,7 @@ color:$primary-highlight
   padding:3%;
   background-image: url("../img/prayer-groups.jpeg");
   background-size:cover;
-  height:70vh;
+  height:100vh;
   background-repeat: no-repeat;
 }
 .prayer-groups img{
@@ -104,7 +128,9 @@ color:$primary-highlight
 .prayer-groups button span{
 display: block;
 }
-
+.charitble-events{
+  margin-bottom: 0px !important;
+}
 .testimony .inner{
   background-color: $blackFontColor;
   color:$whiteFontColor
@@ -114,6 +140,11 @@ display: block;
   font-size: 1.3rem;
   color:$secondary-highlight;
   text-transform:uppercase
+}
+footer{
+  background-color: $blackFontColor; color: $whiteFontColor;
+  text-align: center;
+  padding-top:2%
 }
 
 

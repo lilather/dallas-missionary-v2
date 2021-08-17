@@ -1,10 +1,7 @@
 @import "./color.scss";
  
  
-@media screen and (max-width:2500px) {
 
-
-}
 
  @media screen and (max-width:1200px) {
   .sermon-section{
@@ -17,6 +14,11 @@
   .banner h1{
     font-size:5rem;
   }
+  .prayer-groups{
+    height:70vh;
+
+  }
+
   .prayer-groups button span{
     display: inline;
     }

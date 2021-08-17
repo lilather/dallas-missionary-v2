@@ -11,7 +11,7 @@ function pug() {
 
 
 function pug_dist() {
-    return src( ["./src/pug/* !./src/template.pug"]).pipe(plugins.watch('./src/pug/*.pug')).pipe(data(function(file) {
+    return src( ["./src/pug/*"]).pipe(plugins.watch('./src/pug/*.pug')).pipe(data(function(file) {
       return JSON.parse(fs.readFileSync('./partial-json/dist-data.json'))})).pipe(plugins.pug()).pipe(dest('./dist/'))
  }
   
@@ -35,7 +35,7 @@ return src('./src/*html').pipe(plugins.htmlclean()).pipe(gulp.dest('./dist/'))
 }
 
 function img(){
-  return src('./src/img/*').pipe(plugins.imagemin()).pipe(gulp.dest('./src/img/')).pipe(plugins.webp()).pipe(gulp.dest('./src/img/'));
+  return src('./src/img/*').pipe(plugins.imagemin()).pipe(gulp.dest('./dist/img/')).pipe(plugins.webp()).pipe(gulp.dest('./dist/img/'));
   }
   
 function deploy(){
@@ -49,6 +49,8 @@ exports.deploy=deploy;
 exports.js=js;
 exports.pug_dist=pug_dist;
 exports.pug=pug;
+exports.pug_dist=pug_dist;
+
 exports.dev=parallel(pug,sass)
-exports.dist=parallel(pug_dist,sass,css,html,js,img)
+exports.dist=parallel(pug_dist,sass,css,js,img)
 
