@@ -12,7 +12,7 @@ function pug() {
 
 function pug_dist() {
     return src( ["./src/pug/*"]).pipe(plugins.watch('./src/pug/*.pug')).pipe(data(function(file) {
-      return JSON.parse(fs.readFileSync('./partial-json/dist-data.json'))})).pipe(plugins.pug()).pipe(dest('./dist/'))
+      return JSON.parse(fs.readFileSync('./partial-json/dist-data.json'))})).pipe(plugins.pug()).pipe(plugins.htmlclean()).pipe(dest('./dist/'))
  }
   
 function sass() {
@@ -30,12 +30,10 @@ return src('./src/js/*.js').pipe(plugins.concat('bundle.js')).pipe(plugins.babel
     presets: ['@babel/env']})).pipe(plugins.uglify()).pipe(gulp.dest('./dist/js/')).pipe(plugins.gzip()).pipe(gulp.dest('./dist/js/'))
   } 
 
-function html(){
-return src('./src/*html').pipe(plugins.htmlclean()).pipe(gulp.dest('./dist/'))
-}
 
 function img(){
-  return src('./src/img/*').pipe(plugins.imagemin()).pipe(gulp.dest('./dist/img/')).pipe(plugins.webp()).pipe(gulp.dest('./dist/img/'));
+  return src('./src/img/*').pipe(plugins.imagemin([plugins.imagemin.mozjpeg({quality: 40, progressive: true})],
+  )).pipe(gulp.dest('./dist/img/')).pipe(plugins.webp()).pipe(gulp.dest('./dist/img/'));
   }
   
 function deploy(){
