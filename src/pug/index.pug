@@ -13,11 +13,11 @@ block banner
     
 block content 
  .sermon
-  .container-fluid.sermon-section
+  .container.sermon-section
    .row.sermon-container.justify-content-between
-    .sermon.col-xl-6
+    .sermon.col-xl-7
       video(src='videos/dont_be_afraid.mp4' controls='')
-    .sermon-content.col-xl-6
+    .sermon-content.col-xl-5
      h2.latest-sermon Latest Sermon
      h3.title Dont Be Afraid.
      .sub-title November 8 2020
@@ -28,8 +28,12 @@ block content
      .sub-links-container
       a.sublinks(href='http://' target='_blank' rel='noopener noreferrer') espanol
       a.sublinks(href='http://' target='_blank' rel='noopener noreferrer') Download
- .groups-section.section-padding 
-  .container-fluid 
+ .container.line 
+  hr
+ .groups-section
+
+  .container
+   
    .row 
     .col-xl-4.kids-club
      img(src="./img/kids-group.jpeg")
@@ -47,19 +51,21 @@ block content
      .info 2nd-5th grade
      p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
  .white-bg-wrapper
-  .prayer-groups
+  .prayer-groups.container.prayer-groups-margin
+   h2 join a small group
+   .prayer-groups-img 
     .prayer-info 
-    h3 Where two are more or gathered!
-    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-    button.btn.btn-light.btn-lg Join A Prayer Group
-  .charitble-events.section-margin.section-padding
-   .container-fluid
-      h2 Our giving ministires 
+     h3 Where two are more or gathered!
+     p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+     button.btn.btn-light.btn-lg Join A small Group
+  .charitble-events.section-margin
+   .container
+      h2 Our giving Ministries 
       p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
       .row 
        .col-xl-6
         img(src="./img/charity-africa.jpeg")
-        h3 Learn about our mission trips to Africa 2021
+        h3 Learn about mission trips to Africa 
         p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         button.btn.btn-primary.btn-lg.mt-4.mb-5 Global Missions
 
@@ -69,13 +75,14 @@ block content
         p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
         button.btn.btn-primary.btn-lg.mt-4.mb-5 Support our troops
 
-   .testimony.container-fluid.section-margin 
+  .testimony.container.section-margin 
       .row.justify-content-center 
        .col-xxl-12
+        h2 this month's Testimony
         .row.section-padding.inner.flex-wrap-reverse
          .col-xl-6
-          h2 this month's Testimony 
-          h3 the johnson's story
+          h3 
+           i the johnson's story
           p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
           p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
@@ -83,6 +90,6 @@ block content
          .col-xl-6
           img(src="./img/johnsons-testimony.jpeg")
       
- 
+ script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous")
  block append scripts 
 

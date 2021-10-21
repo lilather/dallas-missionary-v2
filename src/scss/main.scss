@@ -6,28 +6,46 @@ body {
   font-style: normal;
   font-weight: 100;
   font-size: 16px;
-  background-color: $blackFontColor;
+  background-color: $assureDark;
 
 }
 nav{
 background-color: $whiteFontColor;
 padding-right:3%;
 padding-left: 3%;
+
+}
+nav .social-container{
+  margin-left: 30px;
 }
 
 nav li{
-text-transform: capitalize;
+text-transform: uppercase;
+font-size: 1.2rem;
 }
 
 nav a:link{
   color: #000;
+  text-decoration: none;
+  
 }
 nav a:hover{
-  color:darkblue
+  color:darkblue;
+  text-decoration: underline;
+}
+nav a:visited{
+  color: #000;
+
 }
 
+nav svg{
+  opacity: 0.9;
+}
+nav svg:hover{
+  opacity: 1;
+}
 .navbar-brand{
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
 }
 .navbar-brand svg{
@@ -38,8 +56,8 @@ margin-right:7px;
 
 }
 .section-margin{
-  margin-top:30px;
-  margin-bottom:30px;
+  margin-top:120px;
+  margin-bottom:120px;
     }
 h2{
   font-size: 3rem;
@@ -60,6 +78,9 @@ h2{
   color: $whiteFontColor;
   font-size: 7rem;
   text-align: center;
+  
+    padding: 0 15%;
+  
 }
 
 .banner button{
@@ -69,17 +90,24 @@ h2{
   color:$whiteFontColor;
   max-width: 370px;
 }
-
+.prayer-groups-margin{
+  margin-top:150px;
+}
 .sermon-section{
   background-color: $blackFontColor;
   color:$whiteFontColor;
-  padding:3% 5%;
-  border-radius: 30px 30px 0px 0px;
-  margin-top:-120px
+  padding:1%;
+  border-radius:20px 20px 0px 0px;
+  top:-120px;
+  position: relative;
 }
 .sermon-section h2{
   font-size: 3rem;
   margin-top:0px !important
+}
+
+.sermon-content{
+  padding: 40px;
 }
 .sub-title{
   color:$primary-highlight;
@@ -98,6 +126,8 @@ h2{
 }
 .groups-section{
   color:$whiteFontColor;
+  background-color: $assureDark;
+  padding:4% 7%
 }
 .groups-section h3{
   text-transform:capitalize;
@@ -110,11 +140,18 @@ color:$primary-highlight
 
 .prayer-groups{
   color:$blackFontColor;
-  padding:3%;
+
+
+}
+
+.prayer-groups-img{
   background-image: url("../img/prayer-groups.jpeg");
   background-size:cover;
-  height:100vh;
   background-repeat: no-repeat;
+  padding: 2%;
+  height:35vh;
+  min-height: 420px;
+
 }
 .prayer-groups img{
   width:max-content;
@@ -123,31 +160,29 @@ color:$primary-highlight
   background-color: $whiteFontColor;
   color:$blackFontColor;
   margin-top:30px;
-  min-width: 350px;
+  max-width: 275px;
   
-    box-shadow: 0 0.125rem 0.625rem rgba(108,117,125,0.4),0 0.0625rem 0.125rem rgba(108,117,125,0.5);
-
 }
 .prayer-groups button span{
 display: block;
 }
-.charitble-events{
-  margin-bottom: 0px !important;
-}
+
 .testimony .inner{
   background-color: $blackFontColor;
   color:$whiteFontColor
 }
 .testimony h3{
-  margin-top:-10px !important;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color:$secondary-highlight;
   text-transform:uppercase
+}
+.social-container a{
+margin:0px 7px
 }
 footer{
   background-color: $blackFontColor; color: $whiteFontColor;
   text-align: center;
-  padding-top:2%
+  padding:3%
 }
 
 

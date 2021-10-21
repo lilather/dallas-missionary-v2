@@ -1,6 +1,6 @@
     /*--------------------------------------------------------
     / 1. Fixed Header
-    /--------------------------------------------------------*/
+  
     let header=document.getElementById('header');
     let sermonSection=document.querySelector('.sermon')
     let sermonContent=document.querySelector('.sermon-content')
@@ -18,3 +18,4 @@ else{
 }
 resize();
 window.addEventListener("resize" , resize)
+  /--------------------------------------------------------*/

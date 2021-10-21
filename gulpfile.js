@@ -41,7 +41,6 @@ function deploy(){
 
 }
 exports.img=img;
-
 exports.js=js;
 exports.deploy=deploy;
 exports.js=js;

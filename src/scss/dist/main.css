@@ -1,118 +1,145 @@
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 html {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 video {
-  width: 100%; }
+  width: 100%;
+}
 
 .btn {
   padding: 1rem 1.9rem !important;
   text-transform: uppercase;
   font-weight: 600;
-  border-radius: 45px !important; }
+  border-radius: 45px !important;
+}
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   margin-top: 20px !important;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 .white-bg-wrapper {
   background-color: #fcfcff;
   color: #1a1818;
-  padding: 75px 0px; }
+  padding: 75px 0px;
+}
 
 .black-bg-wrapper {
   background-color: #1a1818;
-  color: #fcfcff; }
+  color: #fcfcff;
+}
 
 .btn-primary {
   color: #fff;
   background-color: #25bfe7;
-  border: none; }
+  border: none;
+}
 
 body {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 16px;
-  background-color: #1a1818; }
+  background-color: #1a1818;
+}
 
 nav {
   background-color: #fcfcff;
   padding-right: 3%;
-  padding-left: 3%; }
+  padding-left: 3%;
+}
 
 nav .social-container {
-  margin-left: 30px; }
+  margin-left: 30px;
+}
 
 nav li {
   text-transform: uppercase;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+}
 
 nav a:link {
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 nav a:hover {
   color: darkblue;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 nav a:visited {
-  color: #000; }
+  color: #000;
+}
 
 nav svg {
-  opacity: 0.9; }
+  opacity: 0.9;
+}
 
 nav svg:hover {
-  opacity: 1; }
+  opacity: 1;
+}
 
 .navbar-brand {
   font-size: 1.4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .navbar-brand svg {
-  margin-right: 7px; }
+  margin-right: 7px;
+}
 
 .section-padding {
-  padding: 5%; }
+  padding: 5%;
+}
 
 .section-margin {
   margin-top: 120px;
-  margin-bottom: 120px; }
+  margin-bottom: 120px;
+}
 
 h2 {
-  font-size: 3rem; }
+  font-size: 3rem;
+}
 
 .banner {
   background-color: #CF8087;
   padding: 8% 3%;
   display: flex;
   flex-flow: column;
-  align-items: center; }
+  align-items: center;
+}
 
 .banner h1 {
   margin: 100px 0px;
   color: #fcfcff;
   font-size: 7rem;
   text-align: center;
-  padding: 0 15%; }
+  padding: 0 15%;
+}
 
 .banner button {
   background-color: #1a1818;
   font-weight: 600;
   margin: 75px 0px;
   color: #fcfcff;
-  max-width: 370px; }
+  max-width: 370px;
+}
 
 .prayer-groups-margin {
-  margin-top: 150px; }
+  margin-top: 150px;
+}
 
 .sermon-section {
   background-color: #1a1818;
@@ -120,41 +147,51 @@ h2 {
   padding: 1%;
   border-radius: 20px 20px 0px 0px;
   top: -120px;
-  position: relative; }
+  position: relative;
+}
 
 .sermon-section h2 {
   font-size: 3rem;
-  margin-top: 0px !important; }
+  margin-top: 0px !important;
+}
 
 .sermon-content {
-  padding: 40px; }
+  padding: 40px;
+}
 
 .sub-title {
-  color: #CF8087; }
+  color: #CF8087;
+}
 
 .sub-links-container {
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 .sublinks {
   text-transform: capitalize;
   margin-right: 15px;
-  color: #26BFE7; }
+  color: #26BFE7;
+}
 
 .groups-section {
   color: #fcfcff;
   background-color: #1a1818;
-  padding: 4% 7%; }
+  padding: 4% 7%;
+}
 
 .groups-section h3 {
   text-transform: capitalize;
-  margin: 15px 0px; }
+  margin: 15px 0px;
+}
 
 .groups-section .info {
   font-size: 1.1rem;
-  color: #CF8087; }
+  color: #CF8087;
+}
 
 .prayer-groups {
-  color: #1a1818; }
+  color: #1a1818;
+}
 
 .prayer-groups-img {
   background-image: url("../img/prayer-groups.jpeg");
@@ -162,34 +199,42 @@ h2 {
   background-repeat: no-repeat;
   padding: 2%;
   height: 35vh;
-  min-height: 420px; }
+  min-height: 420px;
+}
 
 .prayer-groups img {
-  width: max-content; }
+  width: max-content;
+}
 
 .prayer-groups button {
   background-color: #fcfcff;
   color: #1a1818;
   margin-top: 30px;
-  max-width: 275px; }
+  max-width: 275px;
+}
 
 .prayer-groups button span {
-  display: block; }
+  display: block;
+}
 
 .testimony .inner {
   background-color: #1a1818;
-  color: #fcfcff; }
+  color: #fcfcff;
+}
 
 .testimony h3 {
   font-size: 2rem;
   color: #26BFE7;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 .social-container a {
-  margin: 0px 7px; }
+  margin: 0px 7px;
+}
 
 footer {
   background-color: #1a1818;
   color: #fcfcff;
   text-align: center;
-  padding: 3%; }
+  padding: 3%;
+}

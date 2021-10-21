@@ -23,7 +23,7 @@ video{
   text-transform: uppercase;
   font-weight: 600;
   border-radius:45px !important;
-  box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.4),0 0.0625rem 0.125rem rgba(108,117,125,0.5);
+  //box-shadow: 0 0.125rem 0.625rem rgba(161, 161, 161, 0.2),0 0.0625rem 0.125rem rgba(136, 146, 155, 0.2);
 
 }
 
@@ -37,6 +37,7 @@ h1,h2,h3,h4,h5,h6{
 .white-bg-wrapper{
   background-color: $whiteFontColor;
   color: $blackFontColor;
+  padding:75px 0px;
 }
 
 .black-bg-wrapper{
