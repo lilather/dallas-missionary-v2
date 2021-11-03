@@ -10,6 +10,8 @@ var gulp = require('gulp');
 var data = require('gulp-data'),
     fs = require('fs');
 
+var ghPages = require('gulp-gh-pages-with-updated-gift');
+
 var plugins = require('gulp-load-plugins')();
 
 function pug() {
@@ -49,7 +51,7 @@ function img() {
 }
 
 function deploy() {
-  return src("./dist/**/*").pipe(plugins.ghPages());
+  return src("./dist/**/*").pipe(ghPages());
 }
 
 exports.img = img;
